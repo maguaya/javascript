@@ -1,0 +1,2 @@
+Declaration  is  where the variable is registed by using a given name with  the corresponding scope while diffinition is a declaration which allows storage,
+And initiolisation is the specification of the initial value to be stored in an object which is not neccessary the 
