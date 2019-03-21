@@ -1,0 +1,20 @@
+var fruits = ["apple","mango","banana","melon"]; 
+                                                                        
+
+undefine
+
+
+console.log(fruits)
+
+VM403:1 (4) ["apple", "mango", "banana", "melon"];
+
+ 
+undefined
+
+ 
+
+fruits[1];
+
+
+
+"mango"
