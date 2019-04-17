@@ -1,0 +1,24 @@
+class KioskClc {
+  constructor(fruit,price){
+  this.fruitPriceList={"mango":40,"banana":20,"guava":10}
+  this.fruit_name=fruit;
+  this.present_fruit=this.fruitPriceList[fruit];
+  this.price=price;
+  }
+  getTotalCost() {
+    return this.present_fruit*this.price;
+  }
+}
+var present_KioskClc = new KioskClc("banana",2);
+console.log(present_KioskClc.price + " " + present_KioskClc.fruit_name + " for KES " + present_KioskClc.getTotalCost());
+
+var present_KioskClc = new KioskClc("mango",2);
+console.log(present_KioskClc.price + " " + present_KioskClc.fruit_name + " for KES " + present_KioskClc.getTotalCost());
+
+var present_KioskClc = new KioskClc("guava",2);
+console.log(present_KioskClc.price + " " + present_KioskClc.fruit_name + " for KES " + present_KioskClc.getTotalCost());
+
+"2 banana for KES 40"
+"2 mango for KES 80"
+"2 guava for KES 20"
+
