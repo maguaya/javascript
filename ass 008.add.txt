@@ -1,0 +1,29 @@
+// let user={
+//   name:"John Doe",
+//   year:20
+// };
+// let{name:name,year:age,isStudent="absent"}=user;
+//    console.log(name,age,isStudent);
+
+// let ask =(question,yes,no) =>{
+//   if(confirm (question,yes,no)) yes()
+//   else no();
+// }
+// ask(
+//   "Do you agree?",
+//   ()=> { console.log("You agreed."); },
+//   ()=> { console.log("You canceled the execution."); }
+// );
+variables and types
+variable is a name of storange location that hold data and can be changed anytime.
+    example: global and local
+     local variables are declared within the variable
+               function myaFunction=(){
+                   var carName="VEVO"
+          global variables declared outside the function
+                function myFunction"VEVO"
+                     function myFunction(){
+                   }
+
+
+
