@@ -1,0 +1,121 @@
+class Mkulima {
+  
+  constructor() {
+    this.farms = [];
+    this.vendors = [];
+    this.products = [];
+    this.orders = [];
+  }
+
+ addFarm(farmId, name, farmer, phone, address){
+  let farm = {
+    farmId:farmId,
+    name:name,
+    farmer:farmer,
+    phone:phone,
+    address:address
+  }
+  this.farms.push(farm)
+ }
+   getFarm(farmId){
+    for(var i=0; i < this.farms.length; i++){
+      let farm = this.farms[i];
+      if(farm.farmId === farmId){
+        return farm
+       }
+     }
+  }
+  removeFarm(farmId){
+    let farm = this.getFarm(farmId)
+    let index = this.farms.indexOf(farm);
+    this.farms.splice(index,1)
+    
+  }
+  updateFarm(farmId,name,farmer,phone,address){
+    let farm = {
+    farmId:farmId,
+    name:name,
+    farmer:farmer,
+    phone:phone,
+    address:address
+  }
+  this.farms.push(farm)
+  }
+  
+
+  addVendor(vendorid, name,  phone){
+  let farm = {
+    vendorid:vendorid,
+    name:name,
+    phone:phone,    
+   }
+  this.farms.push(farm)
+  }
+  
+   getVendor(vendorid){
+    for(var i=0; i < this.vendors.length; i++){
+      let vendor= this.vendors[i];
+      if(vendor.vendorid === vendorid){
+        return vendor
+       }
+    }
+   }
+    removeVendor(vendorid){
+    let vendor = this.getvendor(vendorid)
+    let index = this.vendors.indexOf(vendor);
+    this.vendors.splice(index,1)
+  }  
+  
+
+
+updateVendor(vendorid,name,phone){
+    let farm = {
+    vendorid:vendorid,
+    name:name,
+    phone:phone,
+    
+  }
+  this.farms.push(farm)
+  }
+ 
+addproducts(productid, name, price){
+  let product = {
+    productid:productid,
+    name:name,
+    price:price,
+    
+  }
+  this.farms.push(farm)
+ }
+ removeproduct(productid){
+    let product = this.getvendor(vendorid)
+    let index = this.products.indexOf(product);
+    this.product.splice(index,1)
+  }  
+  }
+
+
+var mkulima1 = new Mkulima();
+mkulima1.addFarm(10,"Shamba","leah","0723456234","kisumu")
+mkulima1.addFarm(11,"Brookside","Atieno","0565543","Nairobi")
+
+mkulima1.removeFarm(1)
+ console.log(mkulima1.farms)
+var mkulima3 = new Mkulima();
+mkulima3.updateFarm(10,"Shamba","floh","0723456234","Miwani");
+ console.log(mkulima3.farms)
+ 
+ var mkulima4 = new Mkulima();
+mkulima4.addVendor(10,"floh","0723456234");
+ console.log(mkulima4.farms)
+
+var mkulima5 = new Mkulima();
+mkulima5.addproducts("10","num",700);
+ console.log(mkulima5.farms)
+
+ 
+ 
+
+ 
+ 
+
