@@ -1,0 +1,75 @@
+class MumMboga {
+  
+  constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+  addProduct(productId, name, price, quantity){
+  let  product ={
+    productId: productId,
+    name:name,
+    price:price,
+    quantity:quantity,
+    
+  
+  }
+  
+   this.products.push(product);
+  
+  }
+   
+   getProduct(productId){
+    for(var i=0; i < this.products.length; i++){
+      let product = this.products[i];
+      if(product.productId === productId){
+        return product
+       }
+     }
+   }
+     
+    removeProduct(productId){
+    let product = this.getproduct(productId)
+    let index = this.products.indexOf(product);
+    this.products.splice(index,1)
+    }
+
+  updateProduct( productId, name, price, quantity){
+    let product = {
+    productId:productId,
+    name:name,
+    price:price,
+    quantity:quantity,  
+    
+  }
+  this.farms.push(product)
+  }
+  }
+addToCart( cartId, product, orderQuantity, customerId){
+  let cart={
+    cartId:cartId,
+    product:product,
+    orderQuantity:orderQuantity,
+    customerId:customerId,
+    
+    this.farms.push(cart)
+  }
+  }
+var mummboga1 = new MumMboga();
+mummboga1.addProduct(234,"Leah",600,20)
+mummboga1.addProduct(344,"Hensley","700",30)
+console.log(mummboga1.products)
+
+mummboga1.removeProduct(1)
+console.log(mummboga1.products)
+var mummboga2=new MumMboga();
+mummboga2.updateProduct(456,"carlos","790",100)
+console.log(mummboga2.products)
+
+
+
+
+
+
+
