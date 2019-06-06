@@ -1,0 +1,41 @@
+var body= document.body
+body.style.backgroundColor="silver"
+var h1 =document.getElementById("title")
+h1 .style.color="green"
+
+var li=document.createElement("li")
+li.innerHTML=("Apples")
+var  foo= document.createElement("fruList")
+fruList.appendChild(li)
+
+var li=document.createElement("li")
+li.innerHTML=("Orange")
+var  foo= document.createElement("fruList")
+fruList.appendChild(li)
+
+var veg=document.createElement("li")
+li.innerHTML=("chard")
+var  veg= document.createElement("vegList")
+vegList.appendChild(li)
+
+
+Async/Await
+
+Async
+Is a function that takes statements outside  the main program flow, 
+allowing the code after the async call to be executed immediately without waiting.
+An async function operates via the loop using an implicit promise to return it's result.
+
+async function hello() {
+  return 'Hello Harzel!';
+}
+
+hello().then(x => console.log(x));
+
+Await
+Used to pause the excution of a promise unil is resolved,It waits for the promise to resove and then resume the sync function
+
+const msg = async () => {
+  const msg = await scaryClown();
+  console.log('Message:', msg);
+}
