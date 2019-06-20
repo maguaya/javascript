@@ -1,0 +1,64 @@
+
+var colorTurn =()=>{
+  var title = document.getElementById("title");
+  title.style.color= title.style.color=="green"? "silver":"green"
+
+};
+setInterval(colorTurn,3000);
+
+
+var veglist = document.getElementsByClassName("veg");
+var i;
+
+for (i = 0; i < veglist.length; i++) {
+  veglist[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var vegList = this.nextElementSibling;
+    if (vegList.style.display === "block") {
+      vegList.style.display = "none";
+    } else {
+      vegList.style.display = "block";
+    }
+  });
+}
+
+
+function addveg(){
+        var li = document.createElement("LI");  
+        var input = document.getElementById("add");
+        li.innerHTML = input.value;
+        input.value = "";
+
+        document.getElementById("click").appendChild(li);
+
+}
+
+
+
+var frutlist = document.getElementsByClassName("frut");
+var i;
+
+for (i = 0; i < frutlist.length; i++) {
+  frutlist[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var fruitList = this.nextElementSibling;
+    if (fruitList.style.display === "block") {
+      fruitList.style.display = "none";
+    } else {
+      fruitList.style.display = "block";
+    }
+  });
+}
+
+
+
+
+function addTunda(){
+        var li = document.createElement("LI");  
+        var input = document.getElementById("addtunda");
+        li.innerHTML = input.value;
+        input.value = "";
+
+        document.getElementById("frlst").appendChild(li);
+
+}
